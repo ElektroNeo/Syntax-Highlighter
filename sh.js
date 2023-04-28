@@ -22,15 +22,10 @@ const before_code = `<!-- ${prism_lang_str.toUpperCase()} style sheets for Prism
   href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.css"
   rel="stylesheet"
 />
-<button class="copy-to-clipboard-button" type="button" data-copy-state="copy">
-	<span>Copy</span>
-</button>
 <!-- Code snippet content -->
 <pre class="line-numbers"><code class="language-${prism_lang_str}">`;
 
-const after_code = `</code>
-
-</pre>
+const after_code = `</code></pre>
 <!-- Javascript for Prism.js core, line number display, and ${prism_lang_str} syntax highlight -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
@@ -48,7 +43,7 @@ switch (prism_lang_str) {
   case "cpp":
     prism_lang = Prism.languages.cpp;
     break;
-  case "sh":
+  case "bash":
     prism_lang = Prism.languages.bash;
     break;
   case "js":

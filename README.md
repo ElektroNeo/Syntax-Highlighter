@@ -18,7 +18,7 @@ Install required packages using `npm install`.
 Currently those languages supported.
 - c
 - cpp
-- sh
+- bash
 - rust
 - python
 - csharp
