@@ -1,0 +1,6 @@
+{
+  "files.autoSave": "onFocusChange",
+  "editor.tabSize": 4,
+  "clang-format.executable": "${workspaceRoot}/node_modules/.bin/clang-format",
+  "C_Cpp.clang_format_path": ".clang-format",
+}
