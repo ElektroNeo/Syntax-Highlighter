@@ -22,6 +22,13 @@ const before_code = `<!-- ${prism_lang_str.toUpperCase()} style sheets for Prism
   href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.css"
   rel="stylesheet"
 />
+<style>
+  @media only screen and (max-width: 480px) {
+  /* For mobile phones: */
+  pre > code {
+    font-size: 12px !important;
+  }
+</style>
 <!-- Code snippet content -->
 <pre class="line-numbers"><code class="language-${prism_lang_str}">`;
 
